@@ -8,9 +8,9 @@ class Card:
     @classmethod
     # represents the number on a card as printable
     def num_repr(cls, num: int) -> str:
-        if num is None:             # Empty
+        if num is None:                         # Empty
             return '  '
-        elif num == cls.NUMBER_CROSSED_OUT: # Crossed out number
+        elif num == cls.NUMBER_CROSSED_OUT:     # Crossed out number
             return '--'
         else:
             return f'{num:2}'       # Not crossed out
